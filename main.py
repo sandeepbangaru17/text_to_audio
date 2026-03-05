@@ -1,14 +1,14 @@
 import os
 import base64
 import requests
-import json
 from dotenv import load_dotenv
 
-# Set your target language here (e.g., 'te-IN' for Telugu, 'hi-IN' for Hindi, 'en-IN' for English)
-TARGET_LANGUAGE = "te-IN"
-SPEAKER = "shubh"
-MODEL = "bulbul:v3"
-MAX_CHARS_PER_CHUNK = 2000
+# TTS settings can be overridden through environment variables.
+TARGET_LANGUAGE = os.getenv("TARGET_LANGUAGE", "te-IN")
+SPEAKER = os.getenv("SPEAKER", "shubh")
+MODEL = os.getenv("MODEL", "bulbul:v3")
+MAX_CHARS_PER_CHUNK = int(os.getenv("MAX_CHARS_PER_CHUNK", "2000"))
+REQUEST_TIMEOUT_SECONDS = int(os.getenv("REQUEST_TIMEOUT_SECONDS", "30"))
 
 def get_audio_from_api(text, language_code):
     """
@@ -32,7 +32,12 @@ def get_audio_from_api(text, language_code):
     }
 
     try:
-        response = requests.post(url, json=payload, headers=headers)
+        response = requests.post(
+            url,
+            json=payload,
+            headers=headers,
+            timeout=REQUEST_TIMEOUT_SECONDS,
+        )
         response.raise_for_status()
         data = response.json()
         if "audios" in data and len(data["audios"]) > 0:
