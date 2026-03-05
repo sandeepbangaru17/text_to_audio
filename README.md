@@ -24,6 +24,21 @@ This project converts text from a `story.txt` file into an audio file (`audio.mp
    pip install -r requirements.txt
    ```
 
+4. **Create a `.env` file:**
+   ```bash
+   SARVAM_API_KEY=your_api_key_here
+   ```
+
+## Configuration (Optional)
+
+You can override default TTS settings through environment variables:
+
+- `TARGET_LANGUAGE` (default: `te-IN`)
+- `SPEAKER` (default: `shubh`)
+- `MODEL` (default: `bulbul:v3`)
+- `MAX_CHARS_PER_CHUNK` (default: `2000`)
+- `REQUEST_TIMEOUT_SECONDS` (default: `30`)
+
 ## Usage
 
 1. Place your text in `story.txt`.
