@@ -7,30 +7,50 @@ This project converts text from a `story.txt` file into an audio file (`audio.mp
 - Python 3.8+
 - Sarvam.ai API Key
 
-## Setup
+## How to get Sarvam.ai API Key
 
-1. Install the dependencies:
+1.  **Sign Up**: Go to [dashboard.sarvam.ai](https://dashboard.sarvam.ai/) and create an account.
+2.  **API Keys**: Navigate to the **"API Keys"** section in the sidebar.
+3.  **Generate**: Click **"Create New API Key"**, give it a name, and copy the key immediately.
+4.  **Credits**: Check the **"Billing"** or **"Usage"** tab to ensure you have active free credits (usually provided to new accounts).
+
+## Setup (Recommended: Virtual Environment)
+
+Since modern Linux distributions protect the system Python environment, use a virtual environment:
+
+1. **Create a virtual environment:**
+   ```bash
+   python3 -m venv venv
+   ```
+
+2. **Activate the environment:**
+   ```bash
+   source venv/bin/activate
+   ```
+
+3. **Install the dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
 
-2. Create a `.env` file from the template and add your Sarvam.ai API key:
+4. **Add your API Key:**
    ```bash
    cp .env.example .env
    ```
-   Then, edit `.env` and replace `YOUR_API_KEY_HERE` with your actual key.
+   Edit `.env` and replace `YOUR_API_KEY_HERE` with your actual key.
 
 ## Usage
 
 1. Place your text in `story.txt`.
-2. Run the script:
+2. Ensure your virtual environment is active (`source venv/bin/activate`).
+3. Run the script:
    ```bash
    python main.py
    ```
-3. The output will be saved as `audio.mp3`.
+4. The output will be saved as `audio.mp3`.
 
 ## Features
 
-- Supports Indian English (`en-IN`) by default.
-- Handles text reading from `story.txt`.
-- Saves output directly to MP3 format.
+- Supports Indian English (`en-IN`), Telugu (`te-IN`), and other Indian languages.
+- **Smart Chunking:** Automatically splits long text files to stay within API limits.
+- **GitHub Playback:** The generated `audio.mp3` can be played directly within the GitHub web interface.
