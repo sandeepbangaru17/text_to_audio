@@ -7,16 +7,7 @@ This project converts text from a `story.txt` file into an audio file (`audio.mp
 - Python 3.8+
 - Sarvam.ai API Key
 
-## How to get Sarvam.ai API Key
-
-1.  **Sign Up**: Go to [dashboard.sarvam.ai](https://dashboard.sarvam.ai/) and create an account.
-2.  **API Keys**: Navigate to the **"API Keys"** section in the sidebar.
-3.  **Generate**: Click **"Create New API Key"**, give it a name, and copy the key immediately.
-4.  **Credits**: Check the **"Billing"** or **"Usage"** tab to ensure you have active free credits (usually provided to new accounts).
-
 ## Setup (Recommended: Virtual Environment)
-
-Since modern Linux distributions protect the system Python environment, use a virtual environment:
 
 1. **Create a virtual environment:**
    ```bash
@@ -47,13 +38,13 @@ Since modern Linux distributions protect the system Python environment, use a vi
 
 Listen to the generated audio directly here:
 
-https://github.com/ppavankumar19/text-to-audio/blob/main/audio.mp3
-
 <div align="center">
-
-[![Download Audio](https://img.shields.io/badge/DOWNLOAD-MP3_File-blue?style=for-the-badge&logo=icloud&logoColor=white)](https://github.com/ppavankumar19/text-to-audio/raw/main/audio.mp3)
-
+  <video controls src="https://github.com/ppavankumar19/text-to-audio/raw/main/audio.mp3" width="100%" height="50"></video>
+  <br>
+  <a href="https://github.com/ppavankumar19/text-to-audio/raw/main/audio.mp3" download><b>Download audio.mp3</b></a>
 </div>
+
+> **Note:** GitHub's security settings often block inline playback for files in the repository. If the player above is empty, please click **Download** or the **audio.mp3** file in the file list above to play it in GitHub's native player.
 
 ## Features
 
