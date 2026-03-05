@@ -48,12 +48,11 @@ Since modern Linux distributions protect the system Python environment, use a vi
 Listen to the generated audio directly here:
 
 <div align="center">
-  <audio controls>
-    <source src="audio.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
+  <video controls name="media" style="width:100%; height:50px;">
+    <source src="https://github.com/ppavankumar19/text-to-audio/raw/main/audio.mp3" type="audio/mpeg">
+  </video>
   <br>
-  <a href="audio.mp3" download><b>Download audio.mp3</b></a>
+  <a href="https://github.com/ppavankumar19/text-to-audio/raw/main/audio.mp3" download><b>Download audio.mp3</b></a>
 </div>
 
 ## Features
