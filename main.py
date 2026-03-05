@@ -3,12 +3,22 @@ import base64
 import requests
 from dotenv import load_dotenv
 
+def int_env(name, default):
+    value = os.getenv(name)
+    if value is None:
+        return default
+    try:
+        return int(value)
+    except ValueError:
+        print(f"Warning: invalid integer for {name}: {value!r}. Using {default}.")
+        return default
+
 # TTS settings can be overridden through environment variables.
 TARGET_LANGUAGE = os.getenv("TARGET_LANGUAGE", "te-IN")
 SPEAKER = os.getenv("SPEAKER", "shubh")
 MODEL = os.getenv("MODEL", "bulbul:v3")
-MAX_CHARS_PER_CHUNK = int(os.getenv("MAX_CHARS_PER_CHUNK", "2000"))
-REQUEST_TIMEOUT_SECONDS = int(os.getenv("REQUEST_TIMEOUT_SECONDS", "30"))
+MAX_CHARS_PER_CHUNK = int_env("MAX_CHARS_PER_CHUNK", 2000)
+REQUEST_TIMEOUT_SECONDS = int_env("REQUEST_TIMEOUT_SECONDS", 30)
 
 def get_audio_from_api(text, language_code):
     """
