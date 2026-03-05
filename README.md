@@ -36,15 +36,7 @@ This project converts text from a `story.txt` file into an audio file (`audio.mp
 
 ## Audio Preview
 
-Listen to the generated audio directly here:
-
-<div align="center">
-  <video controls src="https://github.com/ppavankumar19/text-to-audio/raw/main/audio.mp3" width="100%" height="50"></video>
-  <br>
-  <a href="https://github.com/ppavankumar19/text-to-audio/raw/main/audio.mp3" download><b>Download audio.mp3</b></a>
-</div>
-
-> **Note:** GitHub's security settings often block inline playback for files in the repository. If the player above is empty, please click **Download** or the **audio.mp3** file in the file list above to play it in GitHub's native player.
+*(To activate the inline player: Edit this README on GitHub and drag & drop your `audio.mp3` file here!)*
 
 ## Features
 
