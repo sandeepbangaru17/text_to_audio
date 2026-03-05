@@ -45,14 +45,15 @@ Since modern Linux distributions protect the system Python environment, use a vi
 
 ## Audio Preview
 
-Click the buttons below to play or download the generated audio:
+Listen to the generated audio directly here:
+
+https://github.com/user-attachments/assets/1f7bf92e-audio-mp3
+
+*(Note: If you don't see the player, GitHub may require the file to be converted to MP4 for in-place rendering. See the Download section below.)*
 
 <div align="center">
 
-[![Play Audio](https://img.shields.io/badge/PLAY-Click_to_Listen-brightgreen?style=for-the-badge&logo=google-play&logoColor=white)](https://github.com/ppavankumar19/text-to-audio/blob/main/audio.mp3)
 [![Download Audio](https://img.shields.io/badge/DOWNLOAD-MP3_File-blue?style=for-the-badge&logo=icloud&logoColor=white)](https://github.com/ppavankumar19/text-to-audio/raw/main/audio.mp3)
-
-*(Clicking **PLAY** will open the audio in GitHub's high-quality built-in player)*
 
 </div>
 
