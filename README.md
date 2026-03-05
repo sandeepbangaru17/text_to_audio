@@ -45,18 +45,19 @@ Since modern Linux distributions protect the system Python environment, use a vi
 
 ## Audio Preview
 
-Listen to the generated audio directly here:
+Click the buttons below to play or download the generated audio:
 
 <div align="center">
-  <video controls name="media" style="width:100%; height:50px;">
-    <source src="https://github.com/ppavankumar19/text-to-audio/raw/main/audio.mp3" type="audio/mpeg">
-  </video>
-  <br>
-  <a href="https://github.com/ppavankumar19/text-to-audio/raw/main/audio.mp3" download><b>Download audio.mp3</b></a>
+
+[![Play Audio](https://img.shields.io/badge/PLAY-Click_to_Listen-brightgreen?style=for-the-badge&logo=google-play&logoColor=white)](https://github.com/ppavankumar19/text-to-audio/blob/main/audio.mp3)
+[![Download Audio](https://img.shields.io/badge/DOWNLOAD-MP3_File-blue?style=for-the-badge&logo=icloud&logoColor=white)](https://github.com/ppavankumar19/text-to-audio/raw/main/audio.mp3)
+
+*(Clicking **PLAY** will open the audio in GitHub's high-quality built-in player)*
+
 </div>
 
 ## Features
 
 - Supports Indian English (`en-IN`), Telugu (`te-IN`), and other Indian languages.
 - **Smart Chunking:** Automatically splits long text files to stay within API limits.
-- **GitHub Playback:** The generated `audio.mp3` can be played directly within the GitHub web interface.
+- **Native Experience:** Uses GitHub's secure, built-in player for the best audio quality.
