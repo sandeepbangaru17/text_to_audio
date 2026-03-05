@@ -55,7 +55,7 @@ Click the button below to listen to the audio on the live player:
 
 <div align="center">
 
-[![Live Audio Player](https://img.shields.io/badge/LIVE_PLAYER-Click_to_Listen-brightgreen?style=for-the-badge&logo=google-play&logoColor=white)](https://ppavankumar19.github.io/text-to-audio/)
+[![Live Audio Player](https://img.shields.io/badge/LIVE_PLAYER-Click_to_Listen-brightgreen?style=for-the-badge&logo=google-play&logoColor=white)](https://sandeepbangaru17.github.io/text_to_audio/)
 
 *(Hosted via GitHub Pages)*
 
